@@ -16,6 +16,6 @@
 [submodule "bundle/vim-bad-whitespace"]
 	path = bundle/vim-bad-whitespace
 	url = https://github.com/bitc/vim-bad-whitespace
-[submodule "vim-tomorrow-theme"]
-	path = vim-tomorrow-theme
+[submodule "colors/vim-tomorrow-theme"]
+	path = colors/vim-tomorrow-theme
 	url = https://github.com/chriskempson/vim-tomorrow-theme.git

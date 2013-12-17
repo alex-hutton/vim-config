@@ -1,1 +1,1 @@
-../vim-tomorrow-theme/colors/Tomorrow-Night-Eighties.vim
+vim-tomorrow-theme/colors/Tomorrow-Night-Eighties.vim
