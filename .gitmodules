@@ -4,3 +4,18 @@
 [submodule "bundle/vim-pathogen"]
 	path = bundle/vim-pathogen
 	url = https://github.com/tpope/vim-pathogen.git
+[submodule "bundle/vim-colorschemes"]
+	path = bundle/vim-colorschemes
+	url = git://github.com/flazz/vim-colorschemes.git
+[submodule "bundle/dockerfile.vim"]
+	path = bundle/dockerfile.vim
+	url = git://github.com/honza/dockerfile.vim
+[submodule "bundle/vim-perl"]
+	path = bundle/vim-perl
+	url = https://github.com/vim-perl/vim-perl.git
+[submodule "bundle/vim-bad-whitespace"]
+	path = bundle/vim-bad-whitespace
+	url = https://github.com/bitc/vim-bad-whitespace
+[submodule "vim-tomorrow-theme"]
+	path = vim-tomorrow-theme
+	url = https://github.com/chriskempson/vim-tomorrow-theme.git
