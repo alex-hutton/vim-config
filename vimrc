@@ -28,7 +28,6 @@ set wildmenu
 
 highlight LineNr ctermfg=green
 
-command C let @/=""
 command W w !sudo tee % > /dev/null
 
 au FileType *py,*pyw setlocal tabstop=2 shiftwidth=2 softtabstop=2 expandtab
