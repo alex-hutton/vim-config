@@ -5,7 +5,9 @@ config for vim
 
 Instalation
 ===========
-
+```
 cd ~/
-git clone <repo> .vim
+git clone [repo] .vim
 ln -s .vim/vimrc .vimrc
+```
+
