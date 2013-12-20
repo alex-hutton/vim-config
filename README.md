@@ -3,7 +3,7 @@ vim-config
 
 config for vim
 
-Instalation
+Installation
 ===========
 ```
 cd ~/
