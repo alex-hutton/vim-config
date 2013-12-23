@@ -30,6 +30,6 @@ highlight LineNr ctermfg=green
 
 command W w !sudo tee % > /dev/null
 
-au FileType *py,*pyw setlocal tabstop=2 shiftwidth=2 softtabstop=2 expandtab
-au FileType *py,*pyw colorscheme advantage
+autocmd FileType *py,*pyw setlocal tabstop=2 shiftwidth=2 softtabstop=2 expandtab
+autocmd FileType *py,*pyw colorscheme advantage
 
