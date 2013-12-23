@@ -19,3 +19,6 @@
 [submodule "colors/vim-tomorrow-theme"]
 	path = colors/vim-tomorrow-theme
 	url = https://github.com/chriskempson/vim-tomorrow-theme.git
+[submodule "syntax/python.vim--Vasiliev"]
+	path = syntax/python.vim--Vasiliev
+	url = https://github.com/vim-scripts/python.vim--Vasiliev.git
