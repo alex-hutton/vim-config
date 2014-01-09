@@ -1,24 +1,27 @@
-[submodule "bundle/openssl.vim"]
-	path = bundle/openssl.vim
-	url = https://github.com/vim-scripts/openssl.vim.git
-[submodule "bundle/vim-pathogen"]
-	path = bundle/vim-pathogen
-	url = https://github.com/tpope/vim-pathogen.git
-[submodule "bundle/vim-colorschemes"]
-	path = bundle/vim-colorschemes
-	url = git://github.com/flazz/vim-colorschemes.git
 [submodule "bundle/dockerfile.vim"]
 	path = bundle/dockerfile.vim
 	url = git://github.com/honza/dockerfile.vim
-[submodule "bundle/vim-perl"]
-	path = bundle/vim-perl
-	url = https://github.com/vim-perl/vim-perl.git
+[submodule "bundle/openssl.vim"]
+	path = bundle/openssl.vim
+	url = git://github.com/vim-scripts/openssl.vim.git
+[submodule "bundle/syntastic"]
+	path = bundle/syntastic
+	url = git://github.com/scrooloose/syntastic
 [submodule "bundle/vim-bad-whitespace"]
 	path = bundle/vim-bad-whitespace
-	url = https://github.com/bitc/vim-bad-whitespace
+	url = git://github.com/bitc/vim-bad-whitespace
+[submodule "bundle/vim-colorschemes"]
+	path = bundle/vim-colorschemes
+	url = git://github.com/flazz/vim-colorschemes.git
+[submodule "bundle/vim-pathogen"]
+	path = bundle/vim-pathogen
+	url = git://github.com/tpope/vim-pathogen.git
+[submodule "bundle/vim-perl"]
+	path = bundle/vim-perl
+	url = git://github.com/vim-perl/vim-perl.git
 [submodule "colors/vim-tomorrow-theme"]
 	path = colors/vim-tomorrow-theme
-	url = https://github.com/chriskempson/vim-tomorrow-theme.git
+	url = git://github.com/chriskempson/vim-tomorrow-theme.git
 [submodule "syntax/python.vim--Vasiliev"]
 	path = syntax/python.vim--Vasiliev
-	url = https://github.com/vim-scripts/python.vim--Vasiliev.git
+	url = git://github.com/vim-scripts/python.vim--Vasiliev.git
