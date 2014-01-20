@@ -13,6 +13,9 @@
 [submodule "bundle/vim-colorschemes"]
 	path = bundle/vim-colorschemes
 	url = git://github.com/flazz/vim-colorschemes.git
+[submodule "misc/vim-golang"]
+	path = misc/vim-golang
+	url = git://github.com/jnwhiteh/vim-golang.git
 [submodule "bundle/vim-pathogen"]
 	path = bundle/vim-pathogen
 	url = git://github.com/tpope/vim-pathogen.git
