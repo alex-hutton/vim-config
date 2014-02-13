@@ -8,8 +8,7 @@ Installation
 ```
 cd ~/
 git clone [repo] .vim
-ln -s .vim/vimrc .vimrc
 cd .vim
-git submodule update --init
+make install
 ```
 
