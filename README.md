@@ -7,6 +7,6 @@ Installation
 ============
 ```
 git clone [repo] ~/.vim
-cd .vim && make install && cd -
+cd ~/.vim && make install && cd -
 ```
 
