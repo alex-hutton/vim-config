@@ -2,10 +2,6 @@
 	path = bundle/dockerfile.vim
 	url = git://github.com/honza/dockerfile.vim
 	ignore = dirty
-[submodule "bundle/vim-fugitive"]
-	path = bundle/vim-fugitive
-	url = git://github.com/tpope/vim-fugitive.git
-	ignore = dirty
 [submodule "bundle/mustache"]
 	path = bundle/mustache
 	url = git://github.com/mustache/vim-mustache-handlebars.git
@@ -13,10 +9,6 @@
 [submodule "bundle/openssl.vim"]
 	path = bundle/openssl.vim
 	url = git://github.com/vim-scripts/openssl.vim.git
-	ignore = dirty
-[submodule "bundle/python-mode"]
-	path = bundle/python-mode
-	url = git@github.com:klen/python-mode.git
 	ignore = dirty
 [submodule "bundle/syntastic"]
 	path = bundle/syntastic
@@ -29,6 +21,10 @@
 [submodule "bundle/vim-colorschemes"]
 	path = bundle/vim-colorschemes
 	url = git://github.com/flazz/vim-colorschemes.git
+	ignore = dirty
+[submodule "bundle/vim-fugitive"]
+	path = bundle/vim-fugitive
+	url = git://github.com/tpope/vim-fugitive.git
 	ignore = dirty
 [submodule "bundle/vim-less"]
 	path = bundle/vim-less
@@ -57,4 +53,8 @@
 [submodule "syntax/python.vim--Vasiliev"]
 	path = syntax/python.vim--Vasiliev
 	url = git://github.com/vim-scripts/python.vim--Vasiliev.git
+	ignore = dirty
+[submodule "bundle/python-mode"]
+	path = bundle/python-mode
+	url = git@github.com:klen/python-mode.git
 	ignore = dirty
