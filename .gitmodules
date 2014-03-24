@@ -10,6 +10,10 @@
 	path = bundle/openssl.vim
 	url = git://github.com/vim-scripts/openssl.vim.git
 	ignore = dirty
+[submodule "bundle/python-mode"]
+	path = bundle/python-mode
+	url = git@github.com:klen/python-mode.git
+	ignore = dirty
 [submodule "bundle/syntastic"]
 	path = bundle/syntastic
 	url = git://github.com/scrooloose/syntastic
@@ -53,8 +57,4 @@
 [submodule "syntax/python.vim--Vasiliev"]
 	path = syntax/python.vim--Vasiliev
 	url = git://github.com/vim-scripts/python.vim--Vasiliev.git
-	ignore = dirty
-[submodule "bundle/python-mode"]
-	path = bundle/python-mode
-	url = git@github.com:klen/python-mode.git
 	ignore = dirty
