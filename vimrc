@@ -26,6 +26,9 @@ set tabstop=2
 set textwidth=80
 set wildmenu
 
+let pymode_folding=0
+let pymode_trim_whitespaces=0
+
 highlight LineNr ctermfg=green
 
 command W w !sudo tee % > /dev/null
