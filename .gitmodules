@@ -26,6 +26,10 @@
 	path = bundle/vim-colorschemes
 	url = git://github.com/flazz/vim-colorschemes.git
 	ignore = dirty
+[submodule "bundle/vim-easymotion"]
+	path = bundle/vim-easymotion
+	url = git@github.com:Lokaltog/vim-easymotion
+	ignore = dirty
 [submodule "bundle/vim-fugitive"]
 	path = bundle/vim-fugitive
 	url = git://github.com/tpope/vim-fugitive.git
