@@ -18,6 +18,10 @@
 	path = bundle/vim-bad-whitespace
 	url = git://github.com/bitc/vim-bad-whitespace
 	ignore = dirty
+[submodule "bundle/vim-buffergator"]
+	path = bundle/vim-buffergator
+	url = git@github.com:jeetsukumaran/vim-buffergator
+	ignore = dirty
 [submodule "bundle/vim-colorschemes"]
 	path = bundle/vim-colorschemes
 	url = git://github.com/flazz/vim-colorschemes.git
