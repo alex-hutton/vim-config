@@ -10,10 +10,6 @@
 	path = bundle/openssl.vim
 	url = git://github.com/vim-scripts/openssl.vim.git
 	ignore = dirty
-[submodule "bundle/python-mode"]
-	path = bundle/python-mode
-	url = git@github.com:klen/python-mode.git
-	ignore = dirty
 [submodule "bundle/syntastic"]
 	path = bundle/syntastic
 	url = git://github.com/scrooloose/syntastic
@@ -49,6 +45,10 @@
 [submodule "colors/vim-tomorrow-theme"]
 	path = colors/vim-tomorrow-theme
 	url = git://github.com/chriskempson/vim-tomorrow-theme.git
+	ignore = dirty
+[submodule "misc/python_match"]
+	path = misc/python_match
+	url = git@github.com:vim-scripts/python_match.vim
 	ignore = dirty
 [submodule "misc/vim-golang"]
 	path = misc/vim-golang

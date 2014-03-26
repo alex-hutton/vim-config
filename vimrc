@@ -26,13 +26,10 @@ set tabstop=2
 set textwidth=80
 set wildmenu
 
-let pymode_folding=0
-let pymode_trim_whitespaces=0
-
 highlight LineNr ctermfg=green
 
 command W w !sudo tee % > /dev/null
 
 autocmd FileType python setlocal tabstop=2 shiftwidth=2 softtabstop=2 expandtab
 autocmd FileType python colorscheme advantage
-
+autocmd FileType python source ~/.vim/misc/python_match/ftplugin/python_match.vim
