@@ -6,7 +6,6 @@ execute pathogen#infect()
 syntax enable
 
 set backupdir=~/.vim/backup/
-set directory=~/.vim/swap/
 
 set autoindent
 set colorcolumn=+1
@@ -17,6 +16,7 @@ set ignorecase
 set incsearch
 set laststatus=2
 set modeline
+set noswapfile
 set number
 set shiftwidth=2
 set smartcase
