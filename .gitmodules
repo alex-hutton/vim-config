@@ -66,3 +66,6 @@
 	path = syntax/python.vim--Vasiliev
 	url = git://github.com/vim-scripts/python.vim--Vasiliev.git
 	ignore = dirty
+[submodule "bundler/vimoutliner"]
+	path = bundler/vimoutliner
+	url = git@github.com:vimoutliner/vimoutliner
