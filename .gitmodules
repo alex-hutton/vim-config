@@ -66,3 +66,6 @@
 	path = syntax/python.vim--Vasiliev
 	url = git://github.com/vim-scripts/python.vim--Vasiliev.git
 	ignore = dirty
+[submodule "bundle/IndentConsistencyCop"]
+	path = bundle/IndentConsistencyCop
+	url = git@github.com:vim-scripts/IndentConsistencyCop
