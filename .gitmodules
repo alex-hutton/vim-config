@@ -68,4 +68,9 @@
 	ignore = dirty
 [submodule "bundle/IndentConsistencyCop"]
 	path = bundle/IndentConsistencyCop
-	url = git@github.com:vim-scripts/IndentConsistencyCop
+	url = git://github.com/vim-scripts/IndentConsistencyCop.git
+	ignore = dirty
+[submodule "bundle/Vim-Jinja2-Syntax"]
+	path = bundle/Vim-Jinja2-Syntax
+	url = git://github.com/Glench/Vim-Jinja2-Syntax.git
+	ignore = dirty
