@@ -74,3 +74,6 @@
 	path = bundle/Vim-Jinja2-Syntax
 	url = git://github.com/Glench/Vim-Jinja2-Syntax.git
 	ignore = dirty
+[submodule "bundle/vim-wakatime"]
+	path = bundle/vim-wakatime
+	url = git@github.com:wakatime/vim-wakatime.git
