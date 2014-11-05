@@ -23,7 +23,7 @@ set smartcase
 set smarttab
 set t_Co=256
 set tabstop=2
-set textwidth=80
+set textwidth=79
 set wildmenu
 
 highlight LineNr ctermfg=green
