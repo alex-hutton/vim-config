@@ -18,10 +18,6 @@
 	path = bundle/vim-bad-whitespace
 	url = git://github.com/bitc/vim-bad-whitespace
 	ignore = dirty
-[submodule "bundle/vim-buffergator"]
-	path = bundle/vim-buffergator
-	url = git@github.com:jeetsukumaran/vim-buffergator
-	ignore = dirty
 [submodule "bundle/vim-colorschemes"]
 	path = bundle/vim-colorschemes
 	url = git://github.com/flazz/vim-colorschemes.git
@@ -74,3 +70,12 @@
 	path = bundle/Vim-Jinja2-Syntax
 	url = git://github.com/Glench/Vim-Jinja2-Syntax.git
 	ignore = dirty
+[submodule "bundle/goyo"]
+	path = bundle/goyo
+	url = git@github.com:junegunn/goyo.vim.git
+[submodule "bundle/limelight"]
+	path = bundle/limelight
+	url = git@github.com:junegunn/limelight.vim.git
+[submodule "bundle/vim-pencil"]
+	path = bundle/vim-pencil
+	url = git@github.com:reedes/vim-pencil.git
