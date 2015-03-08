@@ -37,4 +37,8 @@ autocmd FileType yaml setlocal tabstop=2 shiftwidth=2 softtabstop=2 expandtab
 
 autocmd FileType python setlocal tabstop=4 shiftwidth=4 softtabstop=4 expandtab
 autocmd FileType python colorscheme advantage
-autocmd FileType python source ~/.vim/misc/python_match/ftplugin/python_match.vim
+autocmd FileType python
+	\	source ~/.vim/misc/python_match/ftplugin/python_match.vim
+
+command! Prose execute "Goyo | Limelight | PencilSoft"
+command! ProseCancel execute "Goyo! | Limelight! | PencilOff"
