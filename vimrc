@@ -42,3 +42,6 @@ autocmd FileType python
 
 command! Prose execute "Goyo | Limelight | PencilSoft"
 command! ProseCancel execute "Goyo! | Limelight! | PencilOff"
+
+autocmd WinEnter * set colorcolumn=+1
+autocmd WinLeave * set colorcolumn=0
