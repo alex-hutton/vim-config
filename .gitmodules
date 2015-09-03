@@ -82,3 +82,6 @@
 [submodule "bundle/vim-pencil"]
 	path = bundle/vim-pencil
 	url = git@github.com:reedes/vim-pencil.git
+[submodule "bundle/yang.vim"]
+	path = bundle/yang.vim
+	url = git@github.com:nathanalderson/yang.vim.git
