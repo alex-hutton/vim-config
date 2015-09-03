@@ -30,6 +30,7 @@ highlight LineNr ctermfg=green
 
 command! W w !sudo tee % > /dev/null
 
+autocmd BufRead,BufNewFile,BufEnter *.yang setfiletype xml
 autocmd BufRead,BufNewFile,BufEnter package.json,bower.json
 	\	setlocal tabstop=2 shiftwidth=2 softtabstop=2 expandtab
 
