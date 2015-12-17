@@ -1,9 +1,8 @@
-colorscheme Tomorrow-Night-Bright
-
 runtime bundle/vim-pathogen/autoload/pathogen.vim
 execute pathogen#infect()
 
 syntax enable
+colorscheme advantage
 
 set backupdir=~/.vim/backup/
 
@@ -26,9 +25,12 @@ set tabstop=2
 set textwidth=79
 set wildmenu
 
+
 highlight LineNr ctermfg=green
 
 command! W w !sudo tee % > /dev/null
+
+nnoremap <leader>q Oimport pdb; pdb.set_trace()<Esc>
 
 autocmd BufRead,BufNewFile,BufEnter *.yang setfiletype xml
 autocmd BufRead,BufNewFile,BufEnter package.json,bower.json
@@ -37,7 +39,6 @@ autocmd BufRead,BufNewFile,BufEnter package.json,bower.json
 autocmd FileType yaml setlocal tabstop=2 shiftwidth=2 softtabstop=2 expandtab
 
 autocmd FileType python setlocal tabstop=4 shiftwidth=4 softtabstop=4 expandtab
-autocmd FileType python colorscheme advantage
 autocmd FileType python
 	\	source ~/.vim/misc/python_match/ftplugin/python_match.vim
 
@@ -46,3 +47,12 @@ command! ProseCancel execute "Goyo! | Limelight! | PencilOff"
 
 autocmd WinEnter * set colorcolumn=+1
 autocmd WinLeave * set colorcolumn=0
+
+function! s:DiffWithSaved()
+	let filetype=&ft
+	diffthis
+	vnew | r # | normal! 1Gdd
+	diffthis
+	exe "setlocal bt=nofile bh=wipe nobl noswf ro ft=" . filetype
+endfunction
+com! DiffSaved call s:DiffWithSaved()
