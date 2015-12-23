@@ -85,3 +85,6 @@
 [submodule "bundle/yang.vim"]
 	path = bundle/yang.vim
 	url = git@github.com:nathanalderson/yang.vim.git
+[submodule "bundle/vim-scrollbar"]
+	path = bundle/vim-scrollbar
+	url = https://github.com/lornix/vim-scrollbar

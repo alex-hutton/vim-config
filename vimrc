@@ -48,6 +48,10 @@ command! ProseCancel execute "Goyo! | Limelight! | PencilOff"
 autocmd WinEnter * set colorcolumn=+1
 autocmd WinLeave * set colorcolumn=0
 
+
+highlight Scrollbar_Thumb ctermfg=green ctermbg=green cterm=none
+
+
 function! s:DiffWithSaved()
 	let filetype=&ft
 	diffthis
