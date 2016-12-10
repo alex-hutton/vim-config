@@ -15,14 +15,17 @@ set ignorecase
 set incsearch
 set laststatus=2
 set modeline
+set noerrorbells
 set noswapfile
 set number
 set shiftwidth=2
 set smartcase
 set smarttab
 set t_Co=256
+set t_vb=
 set tabstop=2
 set textwidth=79
+set visualbell
 set wildmenu
 
 
