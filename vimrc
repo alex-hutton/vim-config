@@ -1,10 +1,11 @@
+let &runtimepath.=',/home/alex/.dots/vim-config/'
 runtime bundle/vim-pathogen/autoload/pathogen.vim
 execute pathogen#infect()
 
 syntax enable
-colorscheme advantage
+colorscheme blackboard
 
-set backupdir=~/.vim/backup/
+set backupdir=/home/alex/.dots/vim-config/backup
 
 set autoindent
 set colorcolumn=+1
@@ -45,7 +46,7 @@ autocmd FileType yaml setlocal tabstop=2 shiftwidth=2 softtabstop=2 expandtab
 
 autocmd FileType python setlocal tabstop=4 shiftwidth=4 softtabstop=4 expandtab
 autocmd FileType python
-	\	source ~/.vim/misc/python_match/ftplugin/python_match.vim
+	\	source /home/alex/.dots/vim-config/misc/python_match/ftplugin/python_match.vim
 
 command! Prose execute "Goyo | Limelight | PencilSoft"
 command! ProseCancel execute "Goyo! | Limelight! | PencilOff"
