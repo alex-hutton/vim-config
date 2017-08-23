@@ -1,11 +1,11 @@
-let &runtimepath.=',/home/alex/.dots/vim-config/'
+let &runtimepath.=',$HOME/.dots/vim-config/'
 runtime bundle/vim-pathogen/autoload/pathogen.vim
 execute pathogen#infect()
 
 syntax enable
 colorscheme blackboard
 
-set backupdir=/home/alex/.dots/vim-config/backup
+set backupdir=$HOME/.dots/vim-config/backup
 
 set autoindent
 set colorcolumn=+1
