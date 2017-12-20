@@ -10,6 +10,7 @@ set backupdir=$HOME/.dots/vim-config/backup
 set autoindent
 set colorcolumn=+1
 set cursorline
+set expandtab
 set formatoptions-=t
 set hlsearch
 set ignorecase
@@ -22,13 +23,13 @@ set number
 set shiftwidth=2
 set smartcase
 set smarttab
+set softtabstop=2
 set t_Co=256
 set t_vb=
 set tabstop=2
 set textwidth=79
 set visualbell
 set wildmenu
-
 
 highlight LineNr ctermfg=green
 
@@ -37,16 +38,12 @@ command! W w !sudo tee % > /dev/null
 nnoremap <leader>q Oimport pdb; pdb.set_trace()<Esc>==
 
 autocmd BufRead,BufNewFile,BufEnter *.yang setfiletype xml
-autocmd BufRead,BufNewFile,BufEnter package.json,bower.json
-	\	setlocal tabstop=2 shiftwidth=2 softtabstop=2 expandtab
 
-autocmd FileType javascript setlocal tabstop=2 shiftwidth=2 softtabstop=2 expandtab
-
-autocmd FileType yaml setlocal tabstop=2 shiftwidth=2 softtabstop=2 expandtab
+autocmd FileType make setlocal noexpandtab
 
 autocmd FileType python setlocal tabstop=4 shiftwidth=4 softtabstop=4 expandtab
 autocmd FileType python
-	\	source /home/alex/.dots/vim-config/misc/python_match/ftplugin/python_match.vim
+	\	source $HOME/.dots/vim-config/misc/python_match/ftplugin/python_match.vim
 
 command! Prose execute "Goyo | Limelight | PencilSoft"
 command! ProseCancel execute "Goyo! | Limelight! | PencilOff"
@@ -54,9 +51,7 @@ command! ProseCancel execute "Goyo! | Limelight! | PencilOff"
 autocmd WinEnter * set colorcolumn=+1
 autocmd WinLeave * set colorcolumn=0
 
-
 highlight Scrollbar_Thumb ctermfg=green ctermbg=green cterm=none
-
 
 function! s:DiffWithSaved()
 	let filetype=&ft
