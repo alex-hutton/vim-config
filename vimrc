@@ -35,7 +35,7 @@ highlight LineNr ctermfg=green
 
 command! W w !sudo tee % > /dev/null
 
-nnoremap <leader>q Oimport pdb; pdb.set_trace()<Esc>==
+nnoremap <leader>q Oimport ipdb; ipdb.set_trace()<Esc>==
 
 autocmd BufRead,BufNewFile,BufEnter *.yang setfiletype xml
 
