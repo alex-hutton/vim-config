@@ -54,10 +54,6 @@
 	path = misc/python_match
 	url = git@github.com:vim-scripts/python_match.vim
 	ignore = dirty
-[submodule "misc/vim-golang"]
-	path = misc/vim-golang
-	url = git@github.com:jnwhiteh/vim-golang.git
-	ignore = dirty
 [submodule "syntax/python.vim--Vasiliev"]
 	path = syntax/python.vim--Vasiliev
 	url = git@github.com:vim-scripts/python.vim--Vasiliev.git
@@ -88,3 +84,6 @@
 [submodule "bundle/vim-scrollbar"]
 	path = bundle/vim-scrollbar
 	url = https://github.com/lornix/vim-scrollbar
+[submodule "misc/vim-go"]
+	path = misc/vim-go
+	url = https://github.com/fatih/vim-go.git

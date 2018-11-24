@@ -1,1 +1,1 @@
-../misc/vim-golang/syntax/godoc.vim
+../misc/vim-go/syntax/godoc.vim
