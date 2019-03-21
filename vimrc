@@ -35,7 +35,7 @@ highlight LineNr ctermfg=green
 
 command! W w !sudo tee % > /dev/null
 
-nnoremap <leader>q Oimport ipdb; ipdb.set_trace()<Esc>==
+nnoremap <leader>q Oimport ipdb; ipdb.sset_trace()<Esc>==
 
 nnoremap <PageDown> <Nop>
 nnoremap <PageUp> <Nop>
