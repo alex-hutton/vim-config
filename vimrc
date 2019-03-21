@@ -37,6 +37,9 @@ command! W w !sudo tee % > /dev/null
 
 nnoremap <leader>q Oimport ipdb; ipdb.set_trace()<Esc>==
 
+nnoremap <PageDown> <Nop>
+nnoremap <PageUp> <Nop>
+
 autocmd BufRead,BufNewFile,BufEnter *.yang setfiletype xml
 
 autocmd FileType make setlocal noexpandtab
