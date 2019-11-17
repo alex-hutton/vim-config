@@ -87,3 +87,6 @@
 [submodule "misc/vim-go"]
 	path = misc/vim-go
 	url = https://github.com/fatih/vim-go.git
+[submodule "bundle/vim-svelte"]
+	path = bundle/vim-svelte
+	url = git@github.com:evanleck/vim-svelte.git
