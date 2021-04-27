@@ -5,6 +5,11 @@ execute pathogen#infect()
 syntax enable
 colorscheme blackboard
 
+highlight DiffAdd    ctermfg=82 ctermbg=22
+highlight DiffDelete ctermfg=160 ctermbg=52
+highlight DiffChange ctermbg=17
+highlight DiffText   ctermbg=53
+
 set backupdir=$HOME/.dots/vim-config/backup
 
 set autoindent
