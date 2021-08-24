@@ -61,6 +61,8 @@ autocmd WinLeave * set colorcolumn=0
 
 highlight Scrollbar_Thumb ctermfg=green ctermbg=green cterm=none
 
+let g:syntastic_mode = "passive"
+
 function! s:DiffWithSaved()
 	let filetype=&ft
 	diffthis
