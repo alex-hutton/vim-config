@@ -3,7 +3,7 @@ runtime bundle/vim-pathogen/autoload/pathogen.vim
 execute pathogen#infect()
 
 syntax enable
-colorscheme blackboard
+colorscheme brighton
 
 highlight DiffAdd    ctermfg=82 ctermbg=22
 highlight DiffDelete ctermfg=160 ctermbg=52
@@ -61,7 +61,8 @@ autocmd WinLeave * set colorcolumn=0
 
 highlight Scrollbar_Thumb ctermfg=green ctermbg=green cterm=none
 
-let g:syntastic_mode = "passive"
+let g:syntastic_mode_map = { 'mode': 'passive', 'active_filetypes': [],'passive_filetypes': [] }
+
 
 function! s:DiffWithSaved()
 	let filetype=&ft
