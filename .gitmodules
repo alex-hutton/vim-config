@@ -90,3 +90,9 @@
 [submodule "bundle/vim-svelte"]
 	path = bundle/vim-svelte
 	url = git@github.com:evanleck/vim-svelte.git
+[submodule "bundle/fzf.vim"]
+	path = bundle/fzf.vim
+	url = git@github.com:junegunn/fzf.vim.git
+[submodule "bundle/fzf"]
+	path = bundle/fzf
+	url = git@github.com:junegunn/fzf.git
