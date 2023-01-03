@@ -25,6 +25,7 @@ set modeline
 set noerrorbells
 set noswapfile
 set number
+set ruler
 set shiftwidth=2
 set smartcase
 set smarttab
@@ -44,6 +45,10 @@ nnoremap <leader>q Oimport ipdb; ipdb.sset_trace()<Esc>==
 
 nnoremap <PageDown> <Nop>
 nnoremap <PageUp> <Nop>
+
+nnoremap Q <Nop>
+nnoremap q: <Nop>
+nnoremap gQ <Nop>
 
 autocmd BufRead,BufNewFile,BufEnter *.yang setfiletype xml
 
