@@ -16,7 +16,7 @@ set autoindent
 set colorcolumn=+1
 set cursorline
 set expandtab
-set formatoptions-=t
+set formatoptions-=tc
 set hlsearch
 set ignorecase
 set incsearch
