@@ -101,3 +101,6 @@
 	url = https://github.com/christoomey/vim-conflicted
 [submodule "bundle/vim-colorschemes/"]
 	url = git@github.com:EvitanRelta/vim-colorschemes.git
+[submodule "bundle/vim-ledger"]
+	path = bundle/vim-ledger
+	url = git@github.com:ledger/vim-ledger.git

@@ -1,9 +1,10 @@
 let &runtimepath.=',$HOME/.dots/vim-config/'
 runtime bundle/vim-pathogen/autoload/pathogen.vim
+filetype plugin indent on
 execute pathogen#infect()
 
 syntax enable
-colorscheme brighton
+colorscheme darkburn
 
 highlight DiffAdd    ctermfg=82 ctermbg=22
 highlight DiffDelete ctermfg=160 ctermbg=52
