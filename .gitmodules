@@ -96,3 +96,6 @@
 [submodule "bundle/fzf"]
 	path = bundle/fzf
 	url = git@github.com:junegunn/fzf.git
+[submodule "bundle/vim-conflicted"]
+	path = bundle/vim-conflicted
+	url = https://github.com/christoomey/vim-conflicted
