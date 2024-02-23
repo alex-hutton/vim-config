@@ -13,6 +13,8 @@ highlight DiffText   ctermbg=53
 
 set backupdir=$HOME/.dots/vim-config/backup
 
+set paste  " This resets expandtab, so should go before it.
+
 set autoindent
 set colorcolumn=+1
 set cursorline
@@ -29,7 +31,6 @@ set number
 set ruler
 set shiftwidth=2
 set smartcase
-set smarttab
 set softtabstop=2
 set t_Co=256
 set t_vb=
@@ -50,6 +51,7 @@ function! s:on_lsp_buffer_enabled() abort
     nmap <buffer> <f2> <plug>(lsp-rename)        " Rename
     nmap <buffer> <f3> <plug>(lsp-hover)         " Gets 'hover' information
     nmap <buffer> <f4> <plug>(lsp-document-symbol-search)  " list of symbols
+    nmap <buffer> <f5> <plug>(lsp-document-diagnostics)  " linting
     let g:lsp_diagnostics_virtual_text_enabled=0
     let g:lsp_diagnostics_highlights_enabled=0
 endfunction
