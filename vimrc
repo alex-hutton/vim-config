@@ -6,9 +6,12 @@ execute pathogen#infect()
 syntax enable
 colorscheme darkburn
 
-let g:lightline = {}
-let g:lightline.colorscheme = 'apprentice'
-let g:lightline.active = { 'right': [ [ 'percent' ], [ 'lineinfo' ], [ 'filetype'] ] }
+let g:lightline = {
+\ 'active': { 'right': [ [ 'percent' ], [ 'lineinfo' ], [ 'filetype' ] ] },
+\ 'colorscheme': 'apprentice',
+\ 'component': { 'paste': '%{&paste?"":"PASTE!"}' },
+\ 'component_visible_condition': { 'paste': '!&paste' },
+\ }
 
 highlight DiffAdd    ctermfg=82 ctermbg=22
 highlight DiffDelete ctermfg=160 ctermbg=52
