@@ -74,13 +74,15 @@ nnoremap Q <Nop>
 nnoremap q: <Nop>
 nnoremap gQ <Nop>
 
+nnoremap <Tab> :source $MYVIMRC<CR> :retab<CR>
+
 autocmd BufRead,BufNewFile,BufEnter *.yang setfiletype xml
 
 autocmd FileType make setlocal noexpandtab
 
 autocmd FileType python setlocal tabstop=4 shiftwidth=4 softtabstop=4 expandtab
 autocmd FileType python
-	\	source $HOME/.dots/vim-config/misc/python_match/ftplugin/python_match.vim
+  \  source $HOME/.dots/vim-config/misc/python_match/ftplugin/python_match.vim
 
 command! Prose execute "Goyo | Limelight | PencilSoft"
 command! ProseCancel execute "Goyo! | Limelight! | PencilOff"
@@ -94,10 +96,12 @@ let g:syntastic_mode_map = { 'mode': 'passive', 'active_filetypes': [],'passive_
 
 
 function! s:DiffWithSaved()
-	let filetype=&ft
-	diffthis
-	vnew | r # | normal! 1Gdd
-	diffthis
-	exe "setlocal bt=nofile bh=wipe nobl noswf ro ft=" . filetype
+  let filetype=&ft
+  diffthis
+  vnew | r # | normal! 1Gdd
+  diffthis
+  exe "setlocal bt=nofile bh=wipe nobl noswf ro ft=" . filetype
 endfunction
 com! DiffSaved call s:DiffWithSaved()
+
+command! CloseOtherBuffers %bd|e#
