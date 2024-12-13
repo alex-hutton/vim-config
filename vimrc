@@ -50,23 +50,23 @@ set wildmenu
 set grepprg=git\ grep\ -n
 
 function! s:on_lsp_buffer_enabled() abort
-    setlocal omnifunc=lsp#complete
-    nmap <buffer> gd <plug>(lsp-definition)      " Go to definition
-    nmap <buffer> gr <plug>(lsp-references)      " Find all references
-    nmap <buffer> gt <plug>(lsp-type-definition) " Go to type definition
-    nmap <buffer> gK <plug>(lsp-call-heirarchy-incoming) " Call tree
-    nmap <buffer> gJ <plug>(lsp-call-heirarchy-outgoing) " Call tree
-    nmap <buffer> <f2> <plug>(lsp-rename)        " Rename
-    nmap <buffer> <f3> <plug>(lsp-hover)         " Gets 'hover' information
-    nmap <buffer> <f4> <plug>(lsp-document-symbol-search)  " list of symbols
-    nmap <buffer> <f5> <plug>(lsp-document-diagnostics)  " linting
-    let g:lsp_diagnostics_virtual_text_enabled=0
-    let g:lsp_diagnostics_highlights_enabled=0
+  setlocal omnifunc=lsp#complete
+  nmap <buffer> gd <plug>(lsp-definition)      " Go to definition
+  nmap <buffer> gr <plug>(lsp-references)      " Find all references
+  nmap <buffer> gt <plug>(lsp-type-definition) " Go to type definition
+  nmap <buffer> gK <plug>(lsp-call-heirarchy-incoming) " Call tree
+  nmap <buffer> gJ <plug>(lsp-call-heirarchy-outgoing) " Call tree
+  nmap <buffer> <f2> <plug>(lsp-rename)        " Rename
+  nmap <buffer> <f3> <plug>(lsp-hover)         " Gets 'hover' information
+  nmap <buffer> <f4> <plug>(lsp-document-symbol-search)  " list of symbols
+  nmap <buffer> <f5> <plug>(lsp-document-diagnostics)  " linting
+  let g:lsp_diagnostics_virtual_text_enabled=0
+  let g:lsp_diagnostics_highlights_enabled=0
 endfunction
 
 augroup lsp_install
-    au!
-    autocmd User lsp_buffer_enabled call s:on_lsp_buffer_enabled()
+  au!
+  autocmd User lsp_buffer_enabled call s:on_lsp_buffer_enabled()
 augroup END
 
 highlight LineNr ctermfg=green
