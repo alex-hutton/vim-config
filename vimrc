@@ -97,6 +97,23 @@ autocmd FileType python setlocal tabstop=4 shiftwidth=4 softtabstop=4 expandtab
 autocmd FileType python
   \  source $HOME/.dots/vim-config/misc/python_match/ftplugin/python_match.vim
 
+function! s:activate_venv() abort
+  if isdirectory('./venv/bin')
+    let venv_bin = getcwd() . '/venv/bin'
+    if index(split($PATH, ':'), venv_bin) == -1
+      let $PATH = venv_bin . ':' . $PATH
+    endif
+  endif
+endfunction
+
+augroup PythonLsp
+  autocmd!
+  autocmd FileType python call s:activate_venv()
+  autocmd FileType python if !executable('pylsp') |
+    \ echohl WarningMsg | echo "Python LSP Server not available!" | echohl None
+  \ endif
+augroup END
+
 command! Prose execute "Goyo | Limelight | PencilSoft"
 command! ProseCancel execute "Goyo! | Limelight! | PencilOff"
 
