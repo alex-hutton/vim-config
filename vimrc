@@ -7,10 +7,15 @@ syntax enable
 colorscheme darkburn
 
 let g:lightline = {
-\ 'active': { 'right': [ [ 'percent' ], [ 'lineinfo' ], [ 'filetype' ] ] },
-\ 'colorscheme': 'apprentice',
+\ 'active': {
+\ 'left': [ [ 'mode', 'paste' ], ['readyonly', 'bufnum', 'relativepath', 'modified' ] ],
+\ 'right': [ [ 'percent' ], [ 'lineinfo' ] ]
+\ },
+\ 'inactive': { 'right': [ [ 'percent' ], [ 'lineinfo' ] ] },
+\ 'colorscheme': 'my_colorscheme',
 \ 'component': { 'paste': '%{&paste?"":"PASTE!"}' },
 \ 'component_visible_condition': { 'paste': '!&paste' },
+\ 'subseparator': { 'left': '', 'right': '' },
 \ }
 
 highlight DiffAdd    ctermfg=82 ctermbg=22
